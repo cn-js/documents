@@ -42,6 +42,17 @@ Comments(抽象类），包含author_id<br>
 Messages(抽象类），类型: reply（回复话题），reply2（话题中回复），follow（关注用户），at（ ＠某用户）<br>
 ![图2-5](https://github.com/cn-js/documents/blob/scarlettee-patch-2/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/images/%E5%9B%BE2-5%EF%BC%9A%E6%B6%88%E6%81%AF%E6%A8%A1%E5%9D%97%E7%B1%BB%E5%9B%BE.png)
 
+## 用例分析
+### 补充用例归约
+经检查，本项目组发现用例归约比较完善，暂时无需补充。
+
+### 用例中类的析取
+#### 游客注册用例类的析取
+游客首次使用该app时，只拥有帖子的浏览权限；在注册时，输入access-token后，注册成功，系统分配一个用户ID标识用户，加入用户数据库，获得用户权限。<br>
+边界类：signin。signin.html为游客注册填写access-token的页面。<br>
+控制类：export。export控制类负责处理注册时的相关操作，包括输入access-token；加入用户数据库，记录用户相关信息；完成注册反馈。<br>
+实体类：user. user实体类表示注册时的信息，包括注册码（access-token），注册后的用户ID。<br>
+
 
 
 
