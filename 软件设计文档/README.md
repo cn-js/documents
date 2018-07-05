@@ -102,6 +102,8 @@ Messages(抽象类），类型: reply（回复话题），reply2（话题中回�
 
 下图为控制类exports。exports.toggleStar()操作负责处理用户收藏帖子。再进行收藏操作时，该朝着被调用，对实体类topic_collect进行调用增加实例。
 
+下图为实体类topic_collect，topic_collect实体类表示收藏的帖子，包括收藏的日期、主题以及用户ID。
+
 
 
 
