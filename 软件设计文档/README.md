@@ -63,6 +63,8 @@ Messages(抽象类），类型: reply（回复话题），reply2（话题中回�
 ![图3-1-4](https://github.com/cn-js/documents/blob/scarlettee-patch-2/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/images/%E5%9B%BE3-1-4.png)<br>
 
 下图是实体类user实体类注册时的信息，包括注册码（access-token），注册后的用户ID。
+![图3-1-5](https://github.com/cn-js/documents/blob/scarlettee-patch-2/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/images/%E5%9B%BE3-1-5.png)<br>
+
 
 
 
