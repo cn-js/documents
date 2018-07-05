@@ -95,7 +95,7 @@ Messages(抽象类），类型: reply（回复话题），reply2（话题中回�
 
 用户评论时，点击评论，边界类类reply调用reply_topic()进入编辑界面，控制类调用exports.add()编辑评论，完成后调用exports.update()更新实体类Reply数据，最后返回上一级。<br>
 下图是用户评论时的界面，点击评论进入到此页面。
-
+![图片3-3-3](./images/%E5%9B%BE3-3-3.png)
 
 下图是控制类exports.add()操作。exports.add()负责在创建回复时调用，用来在已发布的话题（即帖子）评论，且检查内容输入是否为空。
 
