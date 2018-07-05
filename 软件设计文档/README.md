@@ -84,13 +84,22 @@ Messages(抽象类），类型: reply（回复话题），reply2（话题中回�
 控制类：exports。exports控制的exports.add()操作负责在创建回复时调用。用来在已发布的话题（即帖子）评论。<br>
 实体类：Reply。 Reply实体类表示在发布的帖子下的评论，以表格形式存储在数据库中。<br>
 
-用户评论时，点击评论，边界类类reply调用reply_topic()进入编辑界面，控制类调用exports.add()编辑评论，完成后调用exports.update()更新实体类Reply数据，最后返回上一级。
+用户评论时，点击评论，边界类类reply调用reply_topic()进入编辑界面，控制类调用exports.add()编辑评论，完成后调用exports.update()更新实体类Reply数据，最后返回上一级。<br>
 下图是用户评论时的界面，点击评论进入到此页面。
 
 
 下图是控制类exports.add()操作。exports.add()负责在创建回复时调用，用来在已发布的话题（即帖子）评论，且检查内容输入是否为空。
 
 下图是实体类Reply，表示在发布的帖子下的评论，以表格形式存储在数据库中。
+
+#### 收藏帖子用例类的析取
+已注册用户在登录后，拥有收藏帖子的权限。<br>
+边界类：collect_topics。在collect_topics.html下为登录用户收藏帖子的界面。<br>
+控制类：exports。exports控制类负责处理用户收藏帖子的操作。<br>
+实体类：topic_collect。topic_collect实体类表示收藏的帖子，包括收藏的日期、主题以及用户ID。<br>
+
+下图为用户收藏帖子的界面，可以展示收藏的话题以及对没有收藏的帖子错误反馈。
+
 
 
 
