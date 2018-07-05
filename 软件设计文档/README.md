@@ -63,7 +63,13 @@ Messages(抽象类），类型: reply（回复话题），reply2（话题中回�
 ![图3-1-4](https://github.com/cn-js/documents/blob/scarlettee-patch-2/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/images/%E5%9B%BE3-1-4.png)<br>
 
 下图是实体类user实体类注册时的信息，包括注册码（access-token），注册后的用户ID。
-![图3-1-5](https://github.com/cn-js/documents/blob/scarlettee-patch-2/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/images/%E5%9B%BE3-1-5.png)<br>
+![图3-1-5](./images/%E5%9B%BE3-1-5.png)<br>
+
+#### 用户发帖用例类的析取
+经过登录的用户可以发帖，进入发布的界面在相关分类话题社区发帖，发布的有标题，日期，发帖人等信息并且有浏览数，点赞数，回复以及分享的数量信息反馈。<br>
+边界类：edit。在edit.html下为登录用户发布帖子的界面。<br>
+控制类：exports。exports控制类负责处理用户发布帖子时的相关操作，包括登录，进入发帖界面，发布帖子，发帖成功后反馈成功信息。<br>
+实体类：topic. topic实体类表示发布的帖子中的相关信息，有标题，日期，发帖人等信息并且有浏览数，点赞数，回复以及分享的数量等信息反馈。<br>
 
 
 
