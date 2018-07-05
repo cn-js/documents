@@ -89,6 +89,7 @@ Messages(抽象类），类型: reply（回复话题），reply2（话题中回�
 边界类：reply。reply.html为在已发布话题下的回复界面。<br>
 控制类：exports。exports控制的exports.add()操作负责在创建回复时调用。用来在已发布的话题（即帖子）评论。<br>
 实体类：Reply。 Reply实体类表示在发布的帖子下的评论，以表格形式存储在数据库中。<br>
+![图片3-3-1](./images/%E5%9B%BE3-3-1%EF%BC%9A%E7%94%A8%E6%88%B7%E8%AF%84%E8%AE%BA%E7%94%A8%E4%BE%8B%E7%B1%BB%E7%9A%84%E6%9E%90%E5%8F%96.png)
 
 用户评论时，点击评论，边界类类reply调用reply_topic()进入编辑界面，控制类调用exports.add()编辑评论，完成后调用exports.update()更新实体类Reply数据，最后返回上一级。<br>
 下图是用户评论时的界面，点击评论进入到此页面。
