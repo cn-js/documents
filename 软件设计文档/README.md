@@ -52,7 +52,13 @@ Messages(抽象类），类型: reply（回复话题），reply2（话题中回�
 边界类：signin。signin.html为游客注册填写access-token的页面。<br>
 控制类：export。export控制类负责处理注册时的相关操作，包括输入access-token；加入用户数据库，记录用户相关信息；完成注册反馈。<br>
 实体类：user. user实体类表示注册时的信息，包括注册码（access-token），注册后的用户ID。<br>
-![图3-1-1](https://github.com/cn-js/documents/blob/scarlettee-patch-2/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/images/%E5%9B%BE3-1-1%EF%BC%9A%E6%B8%B8%E5%AE%A2%E6%B3%A8%E5%86%8C%E7%94%A8%E4%BE%8B%E7%B1%BB%E7%9A%84%E6%9E%90%E5%8F%96%E5%9B%BE.png)
+![图3-1-1](https://github.com/cn-js/documents/blob/scarlettee-patch-2/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/images/%E5%9B%BE3-1-1%EF%BC%9A%E6%B8%B8%E5%AE%A2%E6%B3%A8%E5%86%8C%E7%94%A8%E4%BE%8B%E7%B1%BB%E7%9A%84%E6%9E%90%E5%8F%96%E5%9B%BE.png)<br>
+![图3-1-2](https://github.com/cn-js/documents/blob/scarlettee-patch-2/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/images/%E5%9B%BE3-1-2%EF%BC%9A%E6%B8%B8%E5%AE%A2%E6%B3%A8%E5%86%8C%E7%94%A8%E4%BE%8B%E7%B1%BB%E7%9A%84%E6%97%B6%E5%BA%8F%E5%9B%BE.png)<br>
+用户在主页面点击我,系统调用边界类signin函数，再调用控制类中showup()显示登陆界面，signup()函数让用户登录，调用user实体类。成功后结果返回给控制类。<br>
+下图是边界类signin的文件其中的登录，输入用户名部分。
+
+
+
 
 
 
