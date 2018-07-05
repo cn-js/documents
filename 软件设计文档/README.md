@@ -36,6 +36,12 @@ Topic(抽象类)，All(所有)，Best(精华)，Share(分享)，Ask(问答)，Jo
 
 #### 评论模块
 Comments(抽象类），包含author_id<br>
+![图2-4](https://github.com/cn-js/documents/blob/scarlettee-patch-2/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/images/%E5%9B%BE2-4%EF%BC%9A%E8%AF%84%E8%AE%BA%E6%A8%A1%E5%9D%97%E7%B1%BB%E5%9B%BE.png)
+
+#### 消息模块
+Messages(抽象类），类型: reply（回复话题），reply2（话题中回复），follow（关注用户），at（ ＠某用户）<br>
+
+
 
 
 
