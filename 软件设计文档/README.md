@@ -32,6 +32,13 @@ User（抽象类）， RegisterUser（已注册用户），AnonymousUser（游�
 
 #### 主题模块
 Topic(抽象类)，All(所有)，Best(精华)，Share(分享)，Ask(问答)，Job(招聘)<br>
+![图2-3](https://github.com/cn-js/documents/blob/scarlettee-patch-2/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/images/%E5%9B%BE2-3%EF%BC%9A%E4%B8%BB%E9%A2%98%E6%A8%A1%E5%9D%97%E7%B1%BB%E5%9B%BE.png)
+
+#### 评论模块
+Comments(抽象类），包含author_id<br>
+
+
+
 
 
 
