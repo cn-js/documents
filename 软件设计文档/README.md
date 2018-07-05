@@ -23,3 +23,4 @@ REST 约束条件作为一个整体应用时，将生成一个简单、可扩展
 后端主要是作为一个数据来源。通过接受到HTTP请求，然后根据不同的请求去操作数据库，并返回数据。
 
 ## 架构图
+![图2-1](https://github.com/cn-js/documents/blob/scarlettee-patch-2/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/images/%E5%9B%BE2-1%EF%BC%9A%E6%9E%B6%E6%9E%84%E5%9B%BE.png) 
