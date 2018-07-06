@@ -111,7 +111,8 @@ Messages(抽象类），类型: reply（回复话题），reply2（话题中回�
 实体类：topic_collect。topic_collect实体类表示收藏的帖子，包括收藏的日期、主题以及用户ID。<br>
 ![图片3-4-1](./images/%E5%9B%BE3-4-1%EF%BC%9A%E7%94%A8%E6%88%B7%E6%94%B6%E8%97%8F%E5%B8%96%E5%AD%90%E7%9A%84%E7%94%A8%E4%BE%8B%E6%9E%90%E5%8F%96.png
 )<br>
-
+![图片3-4-2](./images/%E5%9B%BE3-4-2%EF%BC%9A%E7%94%A8%E6%88%B7%E6%94%B6%E8%97%8F%E5%B8%96%E5%AD%90%E7%9A%84%E6%97%B6%E5%BA%8F%E5%9B%BE.png
+)<br>
 
 下图为用户收藏帖子的界面，可以展示收藏的话题以及对没有收藏的帖子错误反馈。<br>
 
