@@ -109,8 +109,12 @@ Messages(抽象类），类型: reply（回复话题），reply2（话题中回�
 边界类：collect_topics。在collect_topics.html下为登录用户收藏帖子的界面。<br>
 控制类：exports。exports控制类负责处理用户收藏帖子的操作。<br>
 实体类：topic_collect。topic_collect实体类表示收藏的帖子，包括收藏的日期、主题以及用户ID。<br>
+![图片3-4-1](./images/%E5%9B%BE3-4-1%EF%BC%9A%E7%94%A8%E6%88%B7%E6%94%B6%E8%97%8F%E5%B8%96%E5%AD%90%E7%9A%84%E7%94%A8%E4%BE%8B%E6%9E%90%E5%8F%96.png
+)<br>
 
-下图为用户收藏帖子的界面，可以展示收藏的话题以及对没有收藏的帖子错误反馈。
+
+下图为用户收藏帖子的界面，可以展示收藏的话题以及对没有收藏的帖子错误反馈。<br>
+
 
 下图为控制类exports。exports.toggleStar()操作负责处理用户收藏帖子。再进行收藏操作时，该朝着被调用，对实体类topic_collect进行调用增加实例。
 
