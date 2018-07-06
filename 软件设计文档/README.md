@@ -54,9 +54,10 @@ Messages(抽象类），类型: reply（回复话题），reply2（话题中回�
 实体类：user. user实体类表示注册时的信息，包括注册码（access-token），注册后的用户ID。<br>
 ![图3-1-1](./images/%E5%9B%BE3-1-1%EF%BC%9A%E6%B8%B8%E5%AE%A2%E6%B3%A8%E5%86%8C%E7%94%A8%E4%BE%8B%E7%B1%BB%E7%9A%84%E6%9E%90%E5%8F%96%E5%9B%BE.png)<br>
 ![图3-1-2](./images/%E5%9B%BE3-1-2%EF%BC%9A%E6%B8%B8%E5%AE%A2%E6%B3%A8%E5%86%8C%E7%94%A8%E4%BE%8B%E7%B1%BB%E7%9A%84%E6%97%B6%E5%BA%8F%E5%9B%BE.png)<br>
+
 用户在主页面点击我,系统调用边界类signin函数，再调用控制类中showup()显示登陆界面，signup()函数让用户登录，调用user实体类。成功后结果返回给控制类。<br>
 
-下图是边界类signin的文件其中的登录，输入用户名部分。
+下图是边界类signin的文件其中的登录，输入用户名部分。<br>
 ![图3-1-3](./images/%E5%9B%BE3-1-3.png)<br>
 
 下图是控制类export文件中的登录操作：
@@ -72,7 +73,7 @@ Messages(抽象类），类型: reply（回复话题），reply2（话题中回�
 实体类：topic. topic实体类表示发布的帖子中的相关信息，有标题，日期，发帖人等信息并且有浏览数，点赞数，回复以及分享的数量等信息反馈。<br>
 ![图3-2-1](./images/%E5%9B%BE3-2-1%EF%BC%9A%E7%94%A8%E6%88%B7%E5%8F%91%E5%B8%96%E7%94%A8%E4%BE%8B%E7%B1%BB%E7%9A%84%E6%9E%90%E5%8F%96.png)
 
-![图3-2-1](./images/%E5%9B%BE3-2-1%EF%BC%9A%E7%94%A8%E6%88%B7%E5%8F%91%E5%B8%96%E7%94%A8%E4%BE%8B%E7%B1%BB%E7%9A%84%E6%97%B6%E5%BA%8F%E5%9B%BE.png)<br>
+![图3-2-1](./images/%E5%9B%BE3-2-1%EF%BC%9A%E7%94%A8%E6%88%B7%E5%8F%91%E5%B8%96%E7%94%A8%E4%BE%8B%E7%B1%BB%E7%9A%84%E6%97%B6%E5%BA%8F%E5%9B%BE.png)
 
 用户发贴时，边界类的edit_topic()函数调用控制类exports.put()函数来对帖子进行编辑，包括标题，板块，内容。要求控制类能自动检查是否合法，发布成功的帖子存入实体类topic中并返回上一界面。<br>
 下图为用户发布帖子的edit.html文件，进入主页后可编辑话题进入编辑界面，完成后可发布，反馈是否发布成功信息。
@@ -94,14 +95,14 @@ Messages(抽象类），类型: reply（回复话题），reply2（话题中回�
 ![图片3-3-2](./images/%E5%9B%BE3-3-2%EF%BC%9A%E7%94%A8%E6%88%B7%E8%AF%84%E8%AE%BA%E7%94%A8%E4%BE%8B%E7%B1%BB%E7%9A%84%E6%97%B6%E5%BA%8F%E5%9B%BE.png)
 
 用户评论时，点击评论，边界类类reply调用reply_topic()进入编辑界面，控制类调用exports.add()编辑评论，完成后调用exports.update()更新实体类Reply数据，最后返回上一级。<br>
-下图是用户评论时的界面，点击评论进入到此页面。
+
+下图是用户评论时的界面，点击评论进入到此页面。<br>
 ![图片3-3-3](./images/%E5%9B%BE3-3-3.png)
 
 下图是控制类exports.add()操作。exports.add()负责在创建回复时调用，用来在已发布的话题（即帖子）评论，且检查内容输入是否为空。<br>
-
 ![图片3-3-4](./images/%E5%9B%BE3-3-4.png)
 
-下图是实体类Reply，表示在发布的帖子下的评论，以表格形式存储在数据库中。
+下图是实体类Reply，表示在发布的帖子下的评论，以表格形式存储在数据库中。<br>
 ![图片3-3-5](./images/%E5%9B%BE3-3-5.png)
 
 #### 收藏帖子用例类的析取
@@ -114,10 +115,10 @@ Messages(抽象类），类型: reply（回复话题），reply2（话题中回�
 ![图片3-4-2](./images/%E5%9B%BE3-4-2%EF%BC%9A%E7%94%A8%E6%88%B7%E6%94%B6%E8%97%8F%E5%B8%96%E5%AD%90%E7%9A%84%E6%97%B6%E5%BA%8F%E5%9B%BE.png
 )<br>
 
-下图为用户收藏帖子的界面，可以展示收藏的话题以及对没有收藏的帖子错误反馈。<br>
+下图为用户收藏帖子的界面，可以展示收藏的话题以及对没有收藏的帖子错误反馈。
 ![图3-4-3](./images/%E5%9B%BE3-4-3.png)
 
-下图为控制类exports。exports.toggleStar()操作负责处理用户收藏帖子。再进行收藏操作时，该朝着被调用，对实体类topic_collect进行调用增加实例。<br>
+下图为控制类exports。exports.toggleStar()操作负责处理用户收藏帖子。再进行收藏操作时，该朝着被调用，对实体类topic_collect进行调用增加实例。
 ![图3-4-4](./images/%E5%9B%BE3-4-4.png)
 
 下图为实体类topic_collect，topic_collect实体类表示收藏的帖子，包括收藏的日期、主题以及用户ID。
