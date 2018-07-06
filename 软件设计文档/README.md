@@ -115,7 +115,7 @@ Messages(抽象类），类型: reply（回复话题），reply2（话题中回�
 )<br>
 
 下图为用户收藏帖子的界面，可以展示收藏的话题以及对没有收藏的帖子错误反馈。<br>
-
+![图3-4-3](./images/%E5%9B%BE3-4-3.png)
 
 下图为控制类exports。exports.toggleStar()操作负责处理用户收藏帖子。再进行收藏操作时，该朝着被调用，对实体类topic_collect进行调用增加实例。
 
