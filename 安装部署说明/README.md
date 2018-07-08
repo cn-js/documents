@@ -32,7 +32,7 @@ mongorestore --gzip --archive= database_restore.agz
 ### 2.安装依赖包
 执行 `npm install` 命令，安装必须的依赖包
 ### 3.运行
-执行 `node src/app.js` 启动后端服务。此时会监听`3000`端口，请保证`3000`端口未被占用以及能访问
+执行 `node start` 启动后端服务。此时会监听`3000`端口，请保证`3000`端口未被占用以及能访问
 
 ## 四、运行前端
 ### 1.拉取前端文件
